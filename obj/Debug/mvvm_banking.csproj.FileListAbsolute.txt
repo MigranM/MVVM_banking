@@ -1,0 +1,15 @@
+F:\Ковчег\Утеба\Иные работы\mvvm_banking\mvvm_banking\mvvm_banking\obj\Debug\mvvm_banking.csprojAssemblyReference.cache
+F:\Ковчег\Утеба\Иные работы\mvvm_banking\mvvm_banking\mvvm_banking\obj\Debug\MainWindow.g.cs
+F:\Ковчег\Утеба\Иные работы\mvvm_banking\mvvm_banking\mvvm_banking\obj\Debug\App.g.cs
+F:\Ковчег\Утеба\Иные работы\mvvm_banking\mvvm_banking\mvvm_banking\obj\Debug\mvvm_banking_MarkupCompile.cache
+F:\Ковчег\Утеба\Иные работы\mvvm_banking\mvvm_banking\mvvm_banking\obj\Debug\mvvm_banking_MarkupCompile.lref
+F:\Ковчег\Утеба\Иные работы\mvvm_banking\mvvm_banking\mvvm_banking\bin\Debug\mvvm_banking.exe.config
+F:\Ковчег\Утеба\Иные работы\mvvm_banking\mvvm_banking\mvvm_banking\bin\Debug\mvvm_banking.exe
+F:\Ковчег\Утеба\Иные работы\mvvm_banking\mvvm_banking\mvvm_banking\bin\Debug\mvvm_banking.pdb
+F:\Ковчег\Утеба\Иные работы\mvvm_banking\mvvm_banking\mvvm_banking\obj\Debug\MainWindow.baml
+F:\Ковчег\Утеба\Иные работы\mvvm_banking\mvvm_banking\mvvm_banking\obj\Debug\mvvm_banking.g.resources
+F:\Ковчег\Утеба\Иные работы\mvvm_banking\mvvm_banking\mvvm_banking\obj\Debug\mvvm_banking.Properties.Resources.resources
+F:\Ковчег\Утеба\Иные работы\mvvm_banking\mvvm_banking\mvvm_banking\obj\Debug\mvvm_banking.csproj.GenerateResource.cache
+F:\Ковчег\Утеба\Иные работы\mvvm_banking\mvvm_banking\mvvm_banking\obj\Debug\mvvm_banking.csproj.CoreCompileInputs.cache
+F:\Ковчег\Утеба\Иные работы\mvvm_banking\mvvm_banking\mvvm_banking\obj\Debug\mvvm_banking.exe
+F:\Ковчег\Утеба\Иные работы\mvvm_banking\mvvm_banking\mvvm_banking\obj\Debug\mvvm_banking.pdb
