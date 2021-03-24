@@ -4,11 +4,15 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:mvvm_banking"
+        xmlns:VM="clr-namespace:mvvm_banking.viewmodels"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Window.DataContext>
+        <VM:MainWindowViewModel/>
+    </Window.DataContext>
     <Grid>
         <Button Content="Button" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="248" Height="132" Background="{x:Null}"/>
-        <Label Content="Label" HorizontalAlignment="Left" HorizontalContentAlignment="center" Margin="58,92,0,0" VerticalAlignment="Top" Height="38" Width="152" Background="Transparent" FontWeight="Bold" FontFamily="Arial Black" FontSize="14"/>
+        <Label Content="{Binding bank_account}" HorizontalAlignment="Left" HorizontalContentAlignment="center" Margin="58,92,0,0" VerticalAlignment="Top" Height="38" Width="152" Background="Transparent" FontWeight="Bold" FontFamily="Arial Black" FontSize="14"/>
 
     </Grid>
 </Window>

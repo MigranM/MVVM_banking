@@ -13,3 +13,4 @@ F:\Ковчег\Утеба\Иные работы\mvvm_banking\mvvm_banking\mvvm_
 F:\Ковчег\Утеба\Иные работы\mvvm_banking\mvvm_banking\mvvm_banking\obj\Debug\mvvm_banking.csproj.CoreCompileInputs.cache
 F:\Ковчег\Утеба\Иные работы\mvvm_banking\mvvm_banking\mvvm_banking\obj\Debug\mvvm_banking.exe
 F:\Ковчег\Утеба\Иные работы\mvvm_banking\mvvm_banking\mvvm_banking\obj\Debug\mvvm_banking.pdb
+F:\Ковчег\Утеба\Иные работы\mvvm_banking\mvvm_banking\mvvm_banking\obj\Debug\GeneratedInternalTypeHelper.g.cs
