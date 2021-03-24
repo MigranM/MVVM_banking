@@ -57,6 +57,8 @@
     </ApplicationDefinition>
     <Compile Include="Commands\ActionCommand.cs" />
     <Compile Include="Commands\Base\Command.cs" />
+    <Compile Include="Commands\Decrease_account.cs" />
+    <Compile Include="models\account.cs" />
     <Compile Include="viewmodels\Base\BaseViewModel.cs" />
     <Compile Include="viewmodels\MainWindowViewModel.cs" />
     <Page Include="MainWindow.xaml">
@@ -99,7 +101,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="models\" />
     <Folder Include="views\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
