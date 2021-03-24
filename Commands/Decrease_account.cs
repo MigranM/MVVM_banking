@@ -16,6 +16,7 @@ namespace mvvm_banking.Commands
         public override void Execute(object parameter)
         {
             account.bank_account -= 100;
+            bank_account = account.bank_account.ToString();
         }
     }
 }

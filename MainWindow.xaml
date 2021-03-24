@@ -11,11 +11,14 @@
     <Window.DataContext>
         <VM:MainWindowViewModel/>
     </Window.DataContext>
+   
     <Grid>
-        <Button Content="Button" Command="{Binding Dcr}" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="248" Height="132" Background="{x:Null}">
-       
+        <Button Content="Button"  HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="248" Height="132" Background="{x:Null}">
+            <Button.Command>
+                <cmd:Decrease_account/>
+            </Button.Command>
         </Button>
-        
+
         <Label Content="{Binding bank_account}" HorizontalAlignment="Left" HorizontalContentAlignment="center" Margin="58,92,0,0" VerticalAlignment="Top" Height="38" Width="152" Background="Transparent" FontWeight="Bold" FontFamily="Arial Black" FontSize="14"/>
 
     </Grid>
