@@ -14,3 +14,23 @@ F:\Ковчег\Утеба\Иные работы\mvvm_banking\mvvm_banking\mvvm_
 F:\Ковчег\Утеба\Иные работы\mvvm_banking\mvvm_banking\mvvm_banking\obj\Debug\mvvm_banking.exe
 F:\Ковчег\Утеба\Иные работы\mvvm_banking\mvvm_banking\mvvm_banking\obj\Debug\mvvm_banking.pdb
 F:\Ковчег\Утеба\Иные работы\mvvm_banking\mvvm_banking\mvvm_banking\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Бота\mvvm\MVVM_banking\obj\Debug\mvvm_banking.csprojAssemblyReference.cache
+C:\Бота\mvvm\MVVM_banking\obj\Debug\MainWindow.g.cs
+C:\Бота\mvvm\MVVM_banking\obj\Debug\App.g.cs
+C:\Бота\mvvm\MVVM_banking\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Бота\mvvm\MVVM_banking\obj\Debug\mvvm_banking_MarkupCompile.cache
+C:\Бота\mvvm\MVVM_banking\obj\Debug\mvvm_banking_MarkupCompile.lref
+C:\Бота\mvvm\MVVM_banking\obj\Debug\mvvm_banking.exe
+C:\Бота\mvvm\MVVM_banking\obj\Debug\mvvm_banking.pdb
+C:\Бота\mvvm\MVVM_banking\bin\Debug\mvvm_banking.exe.config
+C:\Бота\mvvm\MVVM_banking\bin\Debug\mvvm_banking.exe
+C:\Бота\mvvm\MVVM_banking\bin\Debug\mvvm_banking.pdb
+C:\Бота\mvvm\MVVM_banking\obj\Debug\MainWindow.baml
+C:\Бота\mvvm\MVVM_banking\obj\Debug\mvvm_banking.g.resources
+C:\Бота\mvvm\MVVM_banking\obj\Debug\mvvm_banking.Properties.Resources.resources
+C:\Бота\mvvm\MVVM_banking\obj\Debug\mvvm_banking.csproj.GenerateResource.cache
+C:\Бота\mvvm\MVVM_banking\obj\Debug\mvvm_banking.csproj.CoreCompileInputs.cache
+C:\Бота\mvvm\MVVM_banking\obj\Debug\mvvm_banking.csproj.CopyComplete
+C:\Бота\mvvm\MVVM_banking\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Бота\mvvm\MVVM_banking\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Бота\mvvm\MVVM_banking\bin\Debug\Microsoft.Xaml.Behaviors.xml

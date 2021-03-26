@@ -11,13 +11,16 @@ namespace mvvm_banking.Commands
 {
     internal class Decrease_account : Command
     {
-        public override bool CanExecute(object parameter) => (account.bank_account > 100);
+        public override bool CanExecute(object parameter)
+        {
+            return false;
+        }
         
 
         public override void Execute(object parameter)
         {
-            account.bank_account -= 100;
-            bank_account = account.bank_account.ToString();
+            
+            
         }
     }
 }

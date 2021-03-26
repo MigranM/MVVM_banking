@@ -4,6 +4,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:mvvm_banking"
+        xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+        
         xmlns:VM="clr-namespace:mvvm_banking.viewmodels"
         xmlns:cmd="clr-namespace:mvvm_banking.Commands"
         mc:Ignorable="d"
@@ -12,14 +14,33 @@
         <VM:MainWindowViewModel/>
     </Window.DataContext>
    
-    <Grid>
-        <Button Content="Button"  HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="248" Height="132" Background="{x:Null}">
-            <Button.Command>
-                <cmd:Decrease_account/>
-            </Button.Command>
-        </Button>
+    <Grid Margin="0,0,3.6,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition >
+                
+            </ColumnDefinition>
+            <ColumnDefinition Width="400">
 
-        <Label Content="{Binding bank_account}" HorizontalAlignment="Left" HorizontalContentAlignment="center" Margin="58,92,0,0" VerticalAlignment="Top" Height="38" Width="152" Background="Transparent" FontWeight="Bold" FontFamily="Arial Black" FontSize="14"/>
+            </ColumnDefinition>
+
+            <ColumnDefinition>
+                
+            </ColumnDefinition>
+        </Grid.ColumnDefinitions>
+       
+
+        <Button Content="Button"   Grid.Column="1" HorizontalAlignment="center" Margin="10,10,0,0" VerticalAlignment="Top" Width="248" Height="132" Background="{x:Null}">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="Click">
+                    <i:InvokeCommandAction 
+                        Command="{Binding Dcr}"
+                        />
+
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+
+        </Button>
+        <Label Content="{Binding bank_account}" Grid.Column="1" HorizontalAlignment="Left" HorizontalContentAlignment="center" Margin="58,92,0,0" VerticalAlignment="Top" Height="38" Width="152" Background="Transparent" FontWeight="Bold" FontFamily="Arial Black" FontSize="14"/>
 
     </Grid>
 </Window>
