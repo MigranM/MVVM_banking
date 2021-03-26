@@ -5,31 +5,87 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:mvvm_banking"
         xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
-        
         xmlns:VM="clr-namespace:mvvm_banking.viewmodels"
         xmlns:cmd="clr-namespace:mvvm_banking.Commands"
+        xmlns:ico="http://www.w3.org/2000/svg"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Width="auto" Height="auto"
+        SizeToContent="WidthAndHeight"
+        ResizeMode="NoResize">
     <Window.DataContext>
         <VM:MainWindowViewModel/>
     </Window.DataContext>
-   
-    <Grid Margin="0,0,3.6,0">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition >
-                
-            </ColumnDefinition>
-            <ColumnDefinition Width="400">
 
-            </ColumnDefinition>
+    <DockPanel Background="Chartreuse" HorizontalAlignment="Stretch" Margin="42">
+        <StackPanel Orientation="Vertical" VerticalAlignment="Stretch" DockPanel.Dock="Left" Background="Cyan" Margin="0, 0, 18, 0" Width="400">
+            <StackPanel Background="CadetBlue" Height="248" Margin="0, 0, 0, 8"></StackPanel>
+            <StackPanel Background="Violet" Height="60" Margin="0, 0, 0, 8"></StackPanel>
+            <StackPanel Background="Violet" Height="60" Margin="0, 0, 0, 8"></StackPanel>
+            <StackPanel Background="Khaki" Height="24" Margin="0"></StackPanel>
 
-            <ColumnDefinition>
-                
-            </ColumnDefinition>
-        </Grid.ColumnDefinitions>
-       
+        </StackPanel>
 
-        <Button Content="Button"   Grid.Column="1" HorizontalAlignment="center" Margin="10,10,0,0" VerticalAlignment="Top" Width="248" Height="132" Background="{x:Null}">
+        <StackPanel Orientation="Vertical" DockPanel.Dock="Right" Background="Coral" Height="auto" Margin="0" Width="200">
+            <DockPanel Background="CadetBlue" Height="96" Margin="0, 0, 0, 8">
+                <StackPanel Orientation="Horizontal" Background="AliceBlue">
+                    <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Background="Gray" VerticalAlignment="Center" Width="96">
+                        <Path Width="42" Height="42" Fill="Black" Data="M38.5 28.2427L36.5295 26.261C36.0432 25.7752 35.6575 25.1979 35.395 24.5625C35.1327 23.927 34.9982 23.2461 35 22.5585V15.75C35 12.037 33.5249 8.47602 30.8996 5.85051C28.274 3.22499 24.713 1.75 21 1.75C17.287 1.75 13.726 3.22499 11.1005 5.85051C8.47499 8.47602 7 12.037 7 15.75V22.5585C7.00165 23.2461 6.86737 23.9274 6.60489 24.5628C6.3424 25.1984 5.95688 25.7757 5.4705 26.2619L3.5 28.2427V35H14.0875C14.2912 36.69 15.1071 38.2469 16.3808 39.3762C17.6543 40.5057 19.2978 41.1292 21 41.1292C22.7022 41.1292 24.3456 40.5057 25.6193 39.3762C26.893 38.2469 27.7088 36.69 27.9125 35H38.5V28.2427ZM21 37.625C20.2242 37.6241 19.4708 37.366 18.8575 36.8909C18.2443 36.4159 17.8059 35.7509 17.6111 35H24.3889C24.1941 35.7509 23.7557 36.4159 23.1425 36.8909C22.5292 37.366 21.7758 37.6241 21 37.625ZM35 31.5H7V29.6872L7.95183 28.7304C8.7622 27.9202 9.40448 26.9579 9.84179 25.8988C10.2791 24.8397 10.5028 23.7045 10.5 22.5585V15.75C10.5 12.9652 11.6062 10.2945 13.5754 8.32538C15.5445 6.35625 18.2152 5.25 21 5.25C23.7848 5.25 26.4554 6.35625 28.4245 8.32538C30.3938 10.2945 31.5 12.9652 31.5 15.75V22.5585C31.497 23.7043 31.7207 24.8393 32.158 25.8983C32.5953 26.9572 33.2378 27.9191 34.0482 28.729L35 29.6867V31.5Z"/>
+                        <Label Content="Уведомления" HorizontalAlignment="Center" Padding="0" VerticalAlignment="Top" Margin="0, 5, 0, 0"></Label>
+                    </StackPanel>
+                </StackPanel>
+
+                <StackPanel DockPanel.Dock="Right" Orientation="Horizontal" Background="AliceBlue">
+                    <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Background="Gray" VerticalAlignment="Center" Width="96">
+                        <Path Width="42" Height="42" Fill="Black" Data="M21 3.5C17.5389 3.5 14.1554 4.52636 11.2775 6.44928C8.39967 8.37221 6.15666 11.1053 4.83212 14.303C3.50758 17.5007 3.16103 21.0194 3.83626 24.4141C4.5115 27.8087 6.17822 30.9269 8.62565 33.3744C11.0731 35.8218 14.1913 37.4885 17.5859 38.1638C20.9806 38.839 24.4993 38.4925 27.6969 37.1679C30.8947 35.8433 33.6278 33.6004 35.5507 30.7225C37.4736 27.8446 38.5 24.4612 38.5 21C38.5 18.7019 38.0473 16.4262 37.1679 14.303C36.2885 12.1798 34.9995 10.2507 33.3744 8.62563C31.7494 7.00061 29.8202 5.71156 27.6969 4.8321C25.5738 3.95265 23.2981 3.5 21 3.5ZM21 35C18.2312 35 15.5243 34.1789 13.222 32.6407C10.9197 31.1022 9.12532 28.9158 8.0657 26.3576C7.00607 23.7995 6.72882 20.9844 7.26901 18.2688C7.8092 15.553 9.14258 13.0584 11.1005 11.1005C13.0584 9.14258 15.553 7.8092 18.2688 7.26901C20.9844 6.72882 23.7995 7.00606 26.3576 8.06568C28.9158 9.12532 31.1022 10.9197 32.6406 13.222C34.1789 15.5243 35 18.231 35 21C34.9958 24.7118 33.5195 28.2702 30.8949 30.8949C28.2702 33.5195 24.7118 34.9958 21 35ZM22.2373 12.3375L19.7628 14.8127L24.2001 19.25H12.25V22.75H24.2001L19.7628 27.1873L22.2373 29.6625L30.8998 21L22.2373 12.3375Z"/>
+                        <Label Content="Переводы" HorizontalAlignment="Center" Padding="0" VerticalAlignment="Top" Margin="0, 5, 0, 0"></Label>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel></StackPanel>
+                <!--Негатив-->
+            </DockPanel>
+            <DockPanel Background="CadetBlue" Height="96" Margin="0, 0, 0, 8">
+                <StackPanel Orientation="Horizontal" Background="AliceBlue">
+                    <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Background="Gray" VerticalAlignment="Center" Width="96">
+                        <Path Width="42" Height="42" Fill="Black" Data="M18.5392 14.1094V24.6094H27.2892V21.1094H22.0392V14.1094H18.5392ZM32.1367 9.86334C29.183 6.90981 25.1771 5.25055 21 5.25055C16.823 5.25055 12.817 6.90981 9.86335 9.86334L8.68735 11.0388L5.25 7.60041V17.5H15.1496L11.1624 13.513L12.3375 12.3375C14.2892 10.3759 16.8462 9.13091 19.5941 8.8044C22.3417 8.47788 25.1193 9.08895 27.4764 10.5385C29.8335 11.9882 31.6318 14.1913 32.5799 16.7909C33.5283 19.3905 33.5706 22.2341 32.7005 24.8608C31.8302 27.4876 30.0984 29.7435 27.7858 31.2629C25.473 32.7822 22.715 33.4759 19.9588 33.2316C17.2024 32.9871 14.6094 31.8192 12.6 29.9166C10.5906 28.0142 9.28261 25.4889 8.88808 22.75H5.35308C5.68173 25.6972 6.83603 28.4917 8.68308 30.8117C10.5301 33.1319 12.9949 34.8831 15.7935 35.8638C18.592 36.8447 21.6108 37.0153 24.5021 36.3559C27.3933 35.6965 30.0395 34.2338 32.1361 32.1366C33.5988 30.6742 34.759 28.938 35.5506 27.0272C36.3421 25.1163 36.7495 23.0683 36.7495 21C36.7495 18.9317 36.3421 16.8836 35.5506 14.9728C34.759 13.062 33.5988 11.3258 32.1361 9.86334H32.1367Z"/>
+                        <Label Content="История" HorizontalAlignment="Center" Padding="0" VerticalAlignment="Top" Margin="0, 5, 0, 0"></Label>
+                    </StackPanel>
+                </StackPanel>
+
+                <StackPanel DockPanel.Dock="Right" Orientation="Horizontal" Background="AliceBlue">
+                    <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Background="Gray" VerticalAlignment="Center" Width="96">
+                        <Path Width="42" Height="42" Fill="Black" Data="M1.75 8.75V33.25H40.25V8.75H1.75ZM36.75 29.75H5.25V12.25H36.75V29.75ZM21 26.25C22.0383 26.25 23.0535 25.9422 23.9167 25.3652C24.7802 24.7884 25.453 23.9683 25.8503 23.0092C26.2477 22.0498 26.3517 20.9942 26.1492 19.9757C25.9466 18.9574 25.4466 18.0219 24.7123 17.2877C23.9781 16.5535 23.0426 16.0535 22.0243 15.8509C21.0058 15.6483 19.9502 15.7523 18.9908 16.1496C18.0317 16.547 17.2117 17.2199 16.6348 18.0833C16.0579 18.9465 15.75 19.9617 15.75 21C15.75 22.3923 16.3031 23.7277 17.2877 24.7123C18.2723 25.6968 19.6077 26.25 21 26.25ZM21 18.9C21.4153 18.9 21.8213 19.0232 22.1667 19.2538C22.512 19.4847 22.7811 19.8126 22.9402 20.1964C23.0991 20.5802 23.1406 21.0023 23.0596 21.4097C22.9785 21.8171 22.7787 22.1912 22.4849 22.4849C22.1912 22.7787 21.8171 22.9785 21.4097 23.0596C21.0023 23.1406 20.5802 23.0991 20.1964 22.9402C19.8126 22.7811 19.4847 22.512 19.2539 22.1667C19.0232 21.8213 18.9 21.4153 18.9 21C18.9005 20.4431 19.1221 19.9094 19.5158 19.5158C19.9094 19.1221 20.4431 18.9005 21 18.9Z"/>
+                        <Label Content="Оплата" HorizontalAlignment="Center" Padding="0" VerticalAlignment="Top" Margin="0, 5, 0, 0"></Label>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel></StackPanel>
+                <!--Негатив-->
+            </DockPanel>
+            <StackPanel Background="Black" Height="96" Margin="0, 0, 0, 8">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Background="AliceBlue" Height="96">
+                    <StackPanel Orientation="Vertical" Background="Gray" VerticalAlignment="Center" Width="96">
+                        <Canvas Width="42" Height="42">
+                            <Ellipse Width="42" Height="42" StrokeThickness="2" Stroke="Black"></Ellipse>
+                            <Path Width="42" Height="42" Fill="Black" Data="M21 18.3333C22.0548 18.3333 23.086 18.0206 23.9631 17.4345C24.8402 16.8485 25.5238 16.0155 25.9274 15.041C26.3311 14.0664 26.4367 12.9941 26.2308 11.9595C26.0251 10.925 25.5171 9.97465 24.7712 9.22877C24.0254 8.48289 23.0751 7.97494 22.0406 7.76915C21.0059 7.56337 19.9336 7.66898 18.9591 8.07265C17.9845 8.47631 17.1516 9.1599 16.5655 10.037C15.9795 10.914 15.6667 11.9452 15.6667 13C15.6683 14.414 16.2307 15.7696 17.2306 16.7695C18.2304 17.7693 19.586 18.3318 21 18.3333ZM21 10.3333C21.5275 10.3333 22.043 10.4897 22.4815 10.7828C22.92 11.0758 23.2619 11.4922 23.4638 11.9795C23.6655 12.4668 23.7183 13.003 23.6155 13.5202C23.5126 14.0375 23.2586 14.5127 22.8856 14.8856C22.5127 15.2586 22.0375 15.5125 21.5203 15.6154C21.003 15.7183 20.4668 15.6655 19.9795 15.4637C19.4923 15.2619 19.0758 14.9201 18.7828 14.4815C18.4898 14.043 18.3334 13.5274 18.3334 13C18.3342 12.293 18.6154 11.6152 19.1154 11.1153C19.6152 10.6154 20.2931 10.3342 21 10.3333ZM31.276 25.2721C28.5487 22.5507 24.853 21.0221 21 21.0221C17.1471 21.0221 13.4514 22.5507 10.724 25.2721L10.3334 25.6628V33H31.6667V25.6628L31.276 25.2721ZM29 30.3333H13V26.7844C15.1884 24.7927 18.041 23.6888 21 23.6888C23.9591 23.6888 26.8118 24.7927 29 26.7844V30.3333Z"/>
+                        </Canvas>
+                        <Label Content="Детали аккаунта" HorizontalAlignment="Center" Padding="0" VerticalAlignment="Top" Margin="0, 5, 0, 0"></Label>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+            
+            
+            <StackPanel Background="Khaki" Height="16" Margin="0"></StackPanel>
+        </StackPanel>
+
+
+        <StackPanel ></StackPanel>
+        <!--Негатив-->
+
+    </DockPanel>
+
+
+
+    <!--
+        <Button Content="Button"   HorizontalAlignment="center" Margin="10,10,0,0" VerticalAlignment="Top" Width="248" Height="132" Background="{x:Null}">
             <i:Interaction.Triggers>
                 <i:EventTrigger EventName="Click">
                     <i:InvokeCommandAction 
@@ -40,7 +96,8 @@
             </i:Interaction.Triggers>
 
         </Button>
-        <Label Content="{Binding bank_account}" Grid.Column="1" HorizontalAlignment="Left" HorizontalContentAlignment="center" Margin="58,92,0,0" VerticalAlignment="Top" Height="38" Width="152" Background="Transparent" FontWeight="Bold" FontFamily="Arial Black" FontSize="14"/>
+        <Label Content="{Binding bank_account}" HorizontalAlignment="Left" HorizontalContentAlignment="center" Margin="58,92,0,0" VerticalAlignment="Top" Height="38" Width="152" Background="Transparent" FontWeight="Bold" FontFamily="Arial Black" FontSize="14"/>
+-->
 
-    </Grid>
+
 </Window>

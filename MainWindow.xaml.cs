@@ -24,5 +24,7 @@ namespace mvvm_banking
         {
             InitializeComponent();
         }
+
+        
     }
 }
