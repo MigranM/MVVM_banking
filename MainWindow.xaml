@@ -11,17 +11,65 @@
         mc:Ignorable="d"
         Title="MainWindow" Width="auto" Height="auto"
         SizeToContent="WidthAndHeight"
-        ResizeMode="NoResize">
+        ResizeMode="NoResize" UseLayoutRounding="True" VerticalAlignment="Top">
     <Window.DataContext>
         <VM:MainWindowViewModel/>
     </Window.DataContext>
 
+<<<<<<< Updated upstream
     <DockPanel Background="Chartreuse" HorizontalAlignment="Stretch" Margin="42">
         <StackPanel Orientation="Vertical" VerticalAlignment="Stretch" DockPanel.Dock="Left" Background="Cyan" Margin="0, 0, 18, 0" Width="400">
             <StackPanel Background="CadetBlue" Height="248" Margin="0, 0, 0, 8"></StackPanel>
             <StackPanel Background="Violet" Height="60" Margin="0, 0, 0, 8"></StackPanel>
             <StackPanel Background="Violet" Height="60" Margin="0, 0, 0, 8"></StackPanel>
             <StackPanel Background="Khaki" Height="24" Margin="0"></StackPanel>
+=======
+    <DockPanel HorizontalAlignment="Stretch" Margin="42">
+        <StackPanel Orientation="Vertical" VerticalAlignment="Stretch" DockPanel.Dock="Left" Margin="0, 0, 18, 0" Width="400">
+            <DockPanel Background="LightGray" Height="248" Margin="0, 0, 0, 8">
+                <TextBlock DockPanel.Dock="Top" Text="D-bank" Margin="28, 26, 28, 0"></TextBlock>
+                <TextBlock DockPanel.Dock="Top" Text = "{Binding client.accounts[1].Amount}" Margin="28, 10, 28, 0"/>
+                <TextBlock DockPanel.Dock="Bottom" Text="1000 1000 1000 1000" Margin="28"></TextBlock>
+                <StackPanel></StackPanel>
+                <!--Негатив-->
+            </DockPanel>
+
+            <DockPanel Background="LightGray" Height="60" Margin="0, 0, 0, 8">
+                <TextBlock DockPanel.Dock="Left" Text = "Ипотека" Margin="28, 0, 28, 0" VerticalAlignment="Center"/>
+                <TextBlock DockPanel.Dock="Right" Text="{Binding client.accounts[0].Amount}" Margin="28, 0, 28, 0" VerticalAlignment="Center"/>
+                <StackPanel></StackPanel>
+                <!--Негатив-->
+            </DockPanel>
+
+            <DockPanel Background="LightGray" Height="60" Margin="0, 0, 0, 8">
+                <TextBlock DockPanel.Dock="Left" Text = "Ипотека" Margin="28, 0, 28, 0" VerticalAlignment="Center"/>
+                <TextBlock DockPanel.Dock="Right" Text="{Binding client.accounts[0].Amount}" Margin="28, 0, 28, 0" VerticalAlignment="Center"/>
+                <StackPanel></StackPanel>
+                <!--Негатив-->
+            </DockPanel>
+
+
+            <Grid VerticalAlignment="Center" HorizontalAlignment="Stretch" Height="24" Margin="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Rectangle Height="2" Grid.Column="0" Fill="Black" UseLayoutRounding="False" ></Rectangle>
+                <Path HorizontalAlignment="Center" Grid.Column="1" Fill="Gray" VerticalAlignment="Center" UseLayoutRounding="False">
+                    <Path.Data>
+                        <PathGeometry Figures="M20 9H11V0H9V9H0V11H9V20H11V11H20V9Z" />
+                    </Path.Data>
+                </Path>
+
+
+                <Rectangle Grid.Column="2" Height="2" Fill="Black" UseLayoutRounding="False" ></Rectangle>
+
+
+            </Grid>
+
+>>>>>>> Stashed changes
 
         </StackPanel>
 
@@ -52,6 +100,18 @@
                 </StackPanel>
 
                 <StackPanel DockPanel.Dock="Right" Orientation="Horizontal" Background="AliceBlue">
+<<<<<<< Updated upstream
+=======
+
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="MouseDown">
+                            <i:InvokeCommandAction 
+                                Command="{Binding pay_the_bill}"        
+                        />
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+
+>>>>>>> Stashed changes
                     <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Background="Gray" VerticalAlignment="Center" Width="96">
                         <Path Width="42" Height="42" Fill="Black" Data="M1.75 8.75V33.25H40.25V8.75H1.75ZM36.75 29.75H5.25V12.25H36.75V29.75ZM21 26.25C22.0383 26.25 23.0535 25.9422 23.9167 25.3652C24.7802 24.7884 25.453 23.9683 25.8503 23.0092C26.2477 22.0498 26.3517 20.9942 26.1492 19.9757C25.9466 18.9574 25.4466 18.0219 24.7123 17.2877C23.9781 16.5535 23.0426 16.0535 22.0243 15.8509C21.0058 15.6483 19.9502 15.7523 18.9908 16.1496C18.0317 16.547 17.2117 17.2199 16.6348 18.0833C16.0579 18.9465 15.75 19.9617 15.75 21C15.75 22.3923 16.3031 23.7277 17.2877 24.7123C18.2723 25.6968 19.6077 26.25 21 26.25ZM21 18.9C21.4153 18.9 21.8213 19.0232 22.1667 19.2538C22.512 19.4847 22.7811 19.8126 22.9402 20.1964C23.0991 20.5802 23.1406 21.0023 23.0596 21.4097C22.9785 21.8171 22.7787 22.1912 22.4849 22.4849C22.1912 22.7787 21.8171 22.9785 21.4097 23.0596C21.0023 23.1406 20.5802 23.0991 20.1964 22.9402C19.8126 22.7811 19.4847 22.512 19.2539 22.1667C19.0232 21.8213 18.9 21.4153 18.9 21C18.9005 20.4431 19.1221 19.9094 19.5158 19.5158C19.9094 19.1221 20.4431 18.9005 21 18.9Z"/>
                         <Label Content="Оплата" HorizontalAlignment="Center" Padding="0" VerticalAlignment="Top" Margin="0, 5, 0, 0"></Label>

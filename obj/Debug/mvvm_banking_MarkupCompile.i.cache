@@ -4,16 +4,28 @@
 winexe
 C#
 .cs
+<<<<<<< Updated upstream
 C:\Бота\mvvm\MVVM_banking\obj\Debug\
+=======
+C:\Users\ilya\Documents\GitHub\MVVM_banking\obj\Debug\
+>>>>>>> Stashed changes
 mvvm_banking
 none
 false
 DEBUG;TRACE
+<<<<<<< Updated upstream
 C:\Бота\mvvm\MVVM_banking\App.xaml
 11151548125
 
 12-387921394
 14-75026363
+=======
+C:\Users\ilya\Documents\GitHub\MVVM_banking\App.xaml
+11151548125
+
+13638030685
+14-1576501973
+>>>>>>> Stashed changes
 MainWindow.xaml;
 
 True
