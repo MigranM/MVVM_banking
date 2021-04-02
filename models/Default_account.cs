@@ -10,8 +10,15 @@ namespace mvvm_banking.models
 {
     abstract class Default_account: INotifyPropertyChanged
     {
-        double Amount { get; set; }
-
+        internal string _account_id;
+        internal string _account_name;
+        private double _amount;
+        public double Amount
+        {
+            get => _amount;
+            set => Set(ref _amount, value);
+        }
+        
         abstract internal void Decrease(double p);
 
         abstract internal void Increase(double p);

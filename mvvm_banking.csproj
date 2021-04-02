@@ -75,7 +75,6 @@
     </ApplicationDefinition>
     <Compile Include="Commands\ActionCommand.cs" />
     <Compile Include="Commands\Base\Command.cs" />
-    <Compile Include="Commands\Decrease_account.cs" />
     <Compile Include="models\Default_account.cs" />
     <Compile Include="models\Accounts.cs" />
     <Compile Include="models\Person.cs" />

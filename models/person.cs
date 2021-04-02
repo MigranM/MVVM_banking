@@ -40,7 +40,7 @@ namespace mvvm_banking.models
             set => Set(ref _bank_account, value);
         }
 
-        internal ObservableCollection<Default_account> accounts { get; set; }
+        public ObservableCollection<Default_account> accounts { get; set; }
 
 
 

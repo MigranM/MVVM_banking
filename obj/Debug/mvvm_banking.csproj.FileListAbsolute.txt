@@ -1,4 +1,3 @@
-F:\Ковчег\Утеба\Иные работы\mvvm_banking\mvvm_banking\mvvm_banking\obj\Debug\mvvm_banking.csprojAssemblyReference.cache
 F:\Ковчег\Утеба\Иные работы\mvvm_banking\mvvm_banking\mvvm_banking\obj\Debug\MainWindow.g.cs
 F:\Ковчег\Утеба\Иные работы\mvvm_banking\mvvm_banking\mvvm_banking\obj\Debug\App.g.cs
 F:\Ковчег\Утеба\Иные работы\mvvm_banking\mvvm_banking\mvvm_banking\obj\Debug\mvvm_banking_MarkupCompile.cache

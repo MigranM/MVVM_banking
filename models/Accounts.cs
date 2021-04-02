@@ -10,12 +10,6 @@ namespace mvvm_banking.models
 {
     internal class Happy_mortgage : Default_account //ипотечный кредит
     {
-        private double _amount;
-        internal double Amount
-        {
-            get => _amount;
-            set => Set(ref _amount, value);
-        }
         
         internal override void Decrease(double p)
         {
@@ -29,18 +23,16 @@ namespace mvvm_banking.models
     }
     internal class Cash_404 : Default_account //дебетовая карта
     {
-        private double _amount;
-        internal double Amount
-        {
-            get => _amount;
-            set => Set(ref _amount, value);
-        }
 
         internal override void Decrease(double p)
         {
             if (p > 10000)
             {
                 Amount -= p * 1.005;
+            }
+            else
+            {
+                Amount -= p;
             }
         }
 
