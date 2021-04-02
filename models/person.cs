@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace mvvm_banking.models
 {
-    internal class person : INotifyPropertyChanged
+    internal class Person : INotifyPropertyChanged
     {
 
         int _id;
@@ -39,7 +40,7 @@ namespace mvvm_banking.models
             set => Set(ref _bank_account, value);
         }
 
-
+        internal ObservableCollection<Default_account> accounts { get; set; }
 
 
 

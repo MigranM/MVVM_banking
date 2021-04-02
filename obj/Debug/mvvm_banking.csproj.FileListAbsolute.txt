@@ -54,3 +54,7 @@ C:\Users\ilya\Documents\GitHub\MVVM_banking\obj\Debug\mvvm_banking.csproj.CoreCo
 C:\Users\ilya\Documents\GitHub\MVVM_banking\obj\Debug\mvvm_banking.csproj.CopyComplete
 C:\Users\ilya\Documents\GitHub\MVVM_banking\obj\Debug\mvvm_banking.exe
 C:\Users\ilya\Documents\GitHub\MVVM_banking\obj\Debug\mvvm_banking.pdb
+F:\Ковчег\Утеба\Иные работы\mvvm_banking\mvvm_banking\mvvm_banking\bin\Debug\Microsoft.Xaml.Behaviors.dll
+F:\Ковчег\Утеба\Иные работы\mvvm_banking\mvvm_banking\mvvm_banking\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+F:\Ковчег\Утеба\Иные работы\mvvm_banking\mvvm_banking\mvvm_banking\bin\Debug\Microsoft.Xaml.Behaviors.xml
+F:\Ковчег\Утеба\Иные работы\mvvm_banking\mvvm_banking\mvvm_banking\obj\Debug\mvvm_banking.csproj.CopyComplete
