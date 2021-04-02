@@ -62,6 +62,7 @@
     <Compile Include="Commands\Base\Command.cs" />
     <Compile Include="Commands\Decrease_account.cs" />
     <Compile Include="models\account.cs" />
+    <Compile Include="models\person.cs" />
     <Compile Include="viewmodels\Base\BaseViewModel.cs" />
     <Compile Include="viewmodels\MainWindowViewModel.cs" />
     <Page Include="MainWindow.xaml">

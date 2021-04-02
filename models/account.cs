@@ -6,14 +6,10 @@ using System.Threading.Tasks;
 
 namespace mvvm_banking.models
 {
-    internal class account
+    interface account
     {
-        private double _bank_account=1520;
+        double Amount { get; set; }
+        double Transaction { get; set; }
 
-        public double bank_account
-        {
-            get => _bank_account;
-            set => _bank_account = value;
-        }
     }
 }
